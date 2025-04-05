@@ -75,15 +75,33 @@
         .payment-complete-button:hover {
             background-color: #218838;
         }
+
+        .order-details {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .order-details span {
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
     <div class="payment-container">
         <h1>Scan to Pay</h1>
+
+        <!-- Order details -->
+        <div class="order-details">
+            <p>Order ID: <span id="orderId">---</span></p>
+            <p>Total Amount: ₹<span id="orderTotal">---</span></p>
+        </div>
+
         <div class="qr-code">
             <img src="assets/images/QR_code.png" alt="Google Pay QR Code">
         </div>
+
         <p>Scan the QR code above using Google Pay or PhonePe to complete the payment.</p>
 
         <div class="payment-link">
@@ -94,7 +112,7 @@
             <p>
                 Don't have Google Pay?
                 <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user"
-                    target="_blank">
+                   target="_blank">
                     Download it here.
                 </a>
             </p>
@@ -104,6 +122,16 @@
     </div>
 
     <script>
+        // Get orderId and total from URL
+        const params = new URLSearchParams(window.location.search);
+        const orderId = params.get('orderId');
+        const total = params.get('total');
+
+        // Update HTML
+        document.getElementById('orderId').textContent = orderId || '---';
+        document.getElementById('orderTotal').textContent = total || '---';
+
+        // Handle payment complete button
         document.getElementById('paymentCompleteButton').addEventListener('click', function () {
             setTimeout(function () {
                 window.location.href = 'user-orders.html';
@@ -111,5 +139,4 @@
         });
     </script>
 </body>
-
 </html>
