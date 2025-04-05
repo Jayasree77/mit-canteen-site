@@ -1,12 +1,13 @@
   // --- Authentication Part ---
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyDBn5GMIvsqhTPMVAeylq-I_2R8SSJYzmI",
-    authDomain: "js-login-form.firebaseapp.com",
-    projectId: "js-login-form",
-    storageBucket: "js-login-form.appspot.com",
-    messagingSenderId: "1039987076182",
-    appId: "1:1039987076182:web:e51f940647b55c0cd7dff7",
+    apiKey: "AIzaSyBQKKbbd_0skAQidmlyqMEgeSky5hfPNI0",
+    authDomain: "mit-canteen-21c53.firebaseapp.com",
+    projectId: "mit-canteen-21c53",
+    storageBucket: "mit-canteen-21c53.firebasestorage.app",
+    messagingSenderId: "162842621279",
+    appId: "1:162842621279:web:92663f913df89adf5cf2ea",
+    measurementId: "G-28Y95R0R65"
   };
   
   // Initialize Firebase

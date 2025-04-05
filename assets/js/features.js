@@ -288,11 +288,6 @@ function customerFooterUI() {
                         </ul>
                     </article>
                 </main>
-                <!-- Deep Devs Info -->
-                <main class="deep-devs flex">
-                    <div>© Copyright 2020 - 2021. All Rights Reserved</div>
-                    <div class="">Designed & Developed with <i class="fas fa-heart clr-red"></i> By <a href="#">Deep Devs</a></div>
-                </main>
             </section>
         `;
         })
@@ -342,12 +337,6 @@ function userFooterUI() {
                             <li> <i class="fas fa-globe-asia"></i> <p>For Professional Courses, Visit: www.altius.ac.in</p></li>
                         </ul>
                     </article>
-                </main>
-                <!-- Deep Devs Info -->
-                <main class="deep-devs flex">
-                    <div>© Copyright 2020 - 2021. All Rights Reserved</div>
-                    <div class="">Designed & Developed with <i class="fas fa-heart clr-red"></i> By <a href="#">Deep Devs</a></div>
-                </main>
             </section>
         `;
         })

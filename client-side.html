@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mit Canteen | Menu</title>
+    <title>Canteen Automation System | Menu</title>
     
     <!-- Page Icon -->
     <link rel="Micosoft icon" href="assets/images/MIT LOGO.png">
@@ -108,35 +108,32 @@
     </section>
 
     <!-- Menu Showcase -->
-    <!-- Hero -->
     <section class="menu-hero">
         <div class="banner">
             <h1 class="banner-title lg">Our Menu</h1>
-            <button class="banner-btn btn">order now</button>
+            <!-- FIXED "Order Now" BUTTON -->
+            <button class="banner-btn btn" id="orderNowBtn">Order Now</button>
         </div>
     </section>
 
     <!-- Menu -->
     <section class="menu" style="margin-bottom: 5rem;">
         <main class="container grid grid-1">
-            <!-- Title -->
-           <div class="title text-center">
+            <div class="title text-center">
                <h2 class="lg my-2">Filter By Category</h2>
-                <!-- Filter Buttons -->
                 <div class="btn-container grid grid-4">
                     <button id="menu-filter" class="filter-btn btn current" type="button" data-id="all">All</button>
                     <button id="menu-filter" class="filter-btn btn" type="button" data-id="Burger">Burger</button>
-                    <button id="menu-filter" class="filter-btn btn" type="button" data-id="Sandwitch">Sandwich</button>
+                    <button id="menu-filter" class="filter-btn btn" type="button" data-id="Sandwich">Sandwich</button>
                     <button id="menu-filter" class="filter-btn btn" type="button" data-id="Fries">Fries</button>
-                    <button id="menu-filter" class="filter-btn btn fv" type="button" data-id="Maggie">Maggie</button>
+                    <button id="menu-filter" class="filter-btn btn" type="button" data-id="Maggie">Maggie</button>
                     <button id="menu-filter" class="filter-btn btn" type="button" data-id="Beverages">Beverages</button>
                     <button id="menu-filter" class="filter-btn btn" type="button" data-id="Pasta">Pasta</button>
                 </div>
            </div>
            <hr>
-           <!-- Menu Items -->
            <div class="menu-section grid grid-3">
-               <!-- Menu Item -->
+               <!-- Menu Items -->
            </div>
        </main>
    </section>
@@ -144,12 +141,17 @@
     <!-- User Footer -->
     <footer class="customer-footer" id="user-footer" style="margin-top: 10rem;"><!-- Comes Through JS --></footer>
 
-    <!-- Menu & Admin Stuff -->
+    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
-    <!-- Creative Features -->
     <script src="assets/js/features.js"></script>
-    <!-- Controls User Stuff -->
     <script src="assets/js/functioning.js"></script>
+
+    <!-- FIXED SCRIPT FOR ORDER NOW BUTTON -->
+    <script>
+        document.getElementById("orderNowBtn").addEventListener("click", function() {
+            window.location.href = "user-orders.html";
+        });
+    </script>
 
 </body>
 </html>
